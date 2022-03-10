@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: cadetblue;
+    padding: 10px;
+}
+
+#container {
+    top: 30px;
+    position: relative;
+    width: 400px;
+    margin: auto;
+    background-color:transparent;
+    box-shadow: 2px 10px 20px 10px ;
+    border-radius: 15px;
+    height: 650px;
+
+}
+
+.audio {
+    position: relative;
+    padding: 20px 0;
+}
+
+img {
+    width: 350px;
+    padding: 10px;
+}
+
+img #fotoAlbum {
+    width: 350px;
+}
+
+#infoSong {
+    margin: auto;
+    text-align: center;
+    line-height: 39px;
+}
+
+#infoSong img {
+    width: 350px;
+    height: 350px;
+}
+
+#timeSong {
+    text-align: center;
+}
+
+#timeSong input {
+    width: 70%;
+}
+
+#controls {
+    text-align: center;
+    position: relative;
+    transform: translateY(-10%);
+    padding: 10px;
+
+}
+
+#controls img {
+    width: 45px;
+    padding: 0px;
+    margin-left: 10px;
+}
+
+#barVolume {
+    margin-top: 0;
+    padding: 0 10px;
+}
+
+#barVolume input {
+    position: relative;
+    top: -8px;
+}
+
+#barVolume img {
+    width: 30px;
+    padding: 0px;
+    margin-left: 10px;
+    border-radius: 10px;
+
+}
+
+@media screen and (max-width:600px) {
+    #container {
+        width: 100%;
+        padding: auto;
+    }
+
+    .audio {
+        position: relative;
+        padding: 20px 0;
+    }
+
+    #infoSong img {
+        width: 330px;
+        height: 350px;
+    }
+
+}

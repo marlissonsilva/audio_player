@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player</title>
+    <link rel="shortcut icon" href="./img/music.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <main>
+        <div id="container">
+            <div class="audio">
+                <audio id='music' nocontrols>
+                    <source src="./audio/song.ogg" id="sound"
+                        type="audio/mpeg">
+                </audio>
+                <div id="infoSong">
+                    <img id="photoAlbum" src="./img/xama.png" alt="Foto àlbum">
+                    <h1 id="nameMusic">Música</h1>
+                    <p id="author">Cantor</p>
+                </div>
+                <div id="timeSong">
+                    <span id="minutesLive">00:00</span>
+                    <input type="range" name="progress" id="progress" step="1" max="100" min="0">
+                    <span id="minutesSeconds">00:00</span>
+                </div>
+
+            </div>
+
+            <div id="controls">
+
+                <img id="previusSong" src="./img/skip-back.svg" alt="Retroceder">
+
+                <img id="playPause" src="./img/play-circle.svg" alt="Play ">
+
+                <img id="nextSong" src="./img/skip-forward.svg" alt="Avançar">
+            </div>
+            <div id="barVolume">
+                <span>
+                    <img id="imgVolume" onclick="mute()" src="./img/volume-2.svg" alt="Volume">
+                </span>
+                <input type="range" name="inputVolume" id="inputVolume" step="1" max="100" min="0">
+            </div>
+        </div>
+
+
+
+    </main>
+    <script src="./player-audio.js"></script>
+</body>
+
+</html>
